@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wonderful Ponorogo</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./assets/img/logo.svg" alt="logo" />
+            </div>
+            <nav class="nav-list" id="navList">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#wisata">Wisata</a></li>
+                    <li><a href="#kesenian">Kesenian</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="home" class="jumbotron">
+            <h1>Wonderful Ponorogo</h1>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div  class="welcome">
+                    <article>
+                        <h1>Selamat Datang</h1>
+                        <p>
+                            Website ini merupakan website tentang informasi wisata &
+                            kesenian yang ada di Kabupaten Ponorogo
+                        </p>
+                        <button>
+                            Selengkapnya <i class="fas fa-arrow-circle-right"></i>
+                        </button>
+                    </article>
+                    <aside>
+                        <img src="./assets/img/intro.svg" alt="" />
+                    </aside>
+                </div>
+                <div id="wisata" class="wisata">
+                    <h1>Wisata</h1>
+                    <div class="list-wisata">
+                        <div class="card-wisata">
+                            <img src="./assets//img/TelagaNgebel.jpg" alt="" />
+                            <h2>Telaga Ngebel</h2>
+                            <p>
+                                Telaga Ngebel di Ponorogo adalah perairan tenang yang
+                                dikelilingi oleh alam indah, hutan, dan bukit-bukit hijau.
+                                Tempat ini menjadi tempat rekreasi populer, menawarkan pesona
+                                alam yang menakjubkan dan area piknik yang nyaman bagi
+                                pengunjung yang ingin bersantai sambil menikmati pemandangan
+                                alam yang menyejukkan.
+                            </p>
+                        </div>
+                        <div class="card-wisata">
+                            <img src="./assets//img/TelagaNgebel.jpg" alt="" />
+                            <h2>Telaga Ngebel</h2>
+                            <p>
+                                Telaga Ngebel di Ponorogo adalah perairan tenang yang
+                                dikelilingi oleh alam indah, hutan, dan bukit-bukit hijau.
+                                Tempat ini menjadi tempat rekreasi populer, menawarkan pesona
+                                alam yang menakjubkan dan area piknik yang nyaman bagi
+                                pengunjung yang ingin bersantai sambil menikmati pemandangan
+                                alam yang menyejukkan.
+                            </p>
+                        </div>
+                        <div class="card-wisata">
+                            <img src="./assets//img/TelagaNgebel.jpg" alt="" />
+                            <h2>Telaga Ngebel</h2>
+                            <p>
+                                Telaga Ngebel di Ponorogo adalah perairan tenang yang
+                                dikelilingi oleh alam indah, hutan, dan bukit-bukit hijau.
+                                Tempat ini menjadi tempat rekreasi populer, menawarkan pesona
+                                alam yang menakjubkan dan area piknik yang nyaman bagi
+                                pengunjung yang ingin bersantai sambil menikmati pemandangan
+                                alam yang menyejukkan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="kesenian" class="kesenian">
+                    <aside>
+                        <img src="./assets/img/Reogpng.svg" alt="" />
+                    </aside>
+
+                    <article>
+                        <h1>Kesenian</h1>
+                        <p>
+                            Seni tradisional Kabupaten Ponorogo, Jawa Timur, Indonesia, kaya
+                            akan warisan budaya yang menakjubkan. Salah satu kesenian yang
+                            paling terkenal adalah "Reog Ponorogo," yang merupakan tarian
+                            dramatis yang melibatkan penari dengan topeng singa raksasa dan
+                            iringan musik gamelan yang menggema. Kesenian ini menceritakan
+                            kisah pahlawan legendaris Ponorogo, Singo Barong, dan
+                            menampilkan gerakan-gerakan yang mengesankan dan kostum-kostum
+                            yang megah. Seni ini menjadi simbol kekuatan dan keberanian
+                            daerah ini, dan terus memikat para pengunjung dengan pesona dan
+                            keindahannya yang memukau.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&#169; 2023 Jefa Ilham Prayoga All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const menuContainer = document.querySelector(".nav-container");
+        const menuToggle = document.getElementById("menuToggle");
+        const navList = document.querySelector(".nav-list ul");
+
+        function toggleMenu() {
+            menuContainer.classList.toggle("active");
+        }
+
+        menuToggle.addEventListener("click", toggleMenu);
+
+        navList.addEventListener("click", function (event) {
+            if (event.target.tagName === "A") {
+                menuContainer.classList.remove("active");
+            }
+        });
+    </script>
+</body>
+
+</html>
